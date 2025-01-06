@@ -1,0 +1,143 @@
+.my-card {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    // margin: 10px !important;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+
+    .card_two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f3f5fb;
+        /* padding: 20px; */
+        // border: 1px solid #F5F8FF;
+        border-radius: 20px;
+        height: 105px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    /* 左边容器样式 */
+    .left_box {
+        flex: 1;
+        /* 占据左边一份 */
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* 右边容器样式 */
+    .right_box {
+        flex: 3; /* 占据右边三分之一 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    /* 里程和包裹量样式 */
+    .center p {
+        margin: 0;
+        padding: 5px;
+        font-size: 14px;
+        color: #666666;
+    }
+
+    /* 箭头样式 */
+
+    /* 通用样式 */
+    .arrow_box {
+        text-align: center; /* 将内容居中对齐 */
+        color: #007bff; /* 设置箭头的颜色 */
+        display: flex;
+        align-items: center;
+    }
+
+    /* 线的样式 */
+    .line1 {
+        display: inline-block;
+        width: 100px; /* 调整线的宽度 */
+        border-top: 2px solid #007bff; /* 设置线的颜色和宽度 */
+    }
+
+    /* 箭头的样式 */
+    .arrow1::before {
+        content: "\2192"; /* Unicode 箭头符号（→） */
+        font-size: 24px; /* 调整箭头的大小 */
+        line-height: 1; /* 使箭头垂直居中 */
+        color: #007bff; /* 设置箭头的颜色 */
+        position: relative;
+        right: 19px;
+        top: -1.7px;
+        /* margin-top: -6px;
+    margin-left: -1px; */
+    }
+
+    /* 右边项目样式 */
+    .right_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        border: 1px solid #000000;
+        padding: 8px 20px;
+        border-radius: 6px;
+        /* height: 74px; */
+    }
+
+    /* 右边项目文本样式 */
+    .right_item div {
+        margin: 5px;
+    }
+
+    .left {
+        font-size: 36px !important;
+        color: #3d3d3d;
+    }
+    .right {
+        font-size: 36px !important;
+        color: #3d3d3d;
+    }
+    .right_item1 {
+        font-size: 14px;
+    }
+    .right_item2 {
+        font-size: 24px;
+        color: #3d3d3d;
+    }
+    /* 时长对标样式 */
+    .duration {
+        /* left: 20px; */
+        /* width: 98px; */
+        width: 112px;
+        height: 36px;
+        font-family: PingFangSC-Medium;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 36px;
+        letter-spacing: 0em;
+        color: #3d3d3d;
+        /* margin-right: 20px; */
+    }
+    .cn-statistic-card {
+        width: 100%;
+    }
+    .card_twos {
+        margin-top: 10px;
+        display: flex;
+    }
+    .card_twos h3 {
+        margin-top: -2px;
+        width: 190px;
+        height: 112px;
+        line-height: 112px;
+        /* border: 1px solid #000000; */
+        text-align: center;
+        font-size: 24px;
+    }
+}
