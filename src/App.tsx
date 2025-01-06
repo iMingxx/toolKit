@@ -1,11 +1,11 @@
-import react, { useEffect } from 'react';
-import routes from '@/route/routes';
-import { Navigate, useLocation, useNavigate } from 'react-router';
-import { GlobalContext } from './GlobalContext';
-import { renderRoutes } from '@/route/routes';
-import 'moment/locale/zh-cn';
-import React from 'react';
-
+import react, { useEffect } from "react";
+import routes from "@/route/routes";
+import { Navigate, useLocation, useNavigate } from "react-router";
+import { GlobalContext } from "./GlobalContext";
+import { renderRoutes } from "@/route/routes";
+import "moment/locale/zh-cn";
+import React from "react";
+import "amfe-flexible";
 const App = (props: any) => {
     return (
         <div>
