@@ -40,5 +40,8 @@ export default defineConfig({
                 javascriptEnabled: true
             }
         }
+    },
+    build: {
+        sourcemap: true // 启用 source map，有助于调试源代码
     }
 });

@@ -6,6 +6,8 @@ import Home from "@/pages/Home";
 import React from "react";
 const Login = lazy(() => import("@/pages/User/login"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
+const SignIn = lazy(() => import("@/pages/signIn/index"));
+const SignInDetails = lazy(() => import("@/pages/signIn/signInDetails"));
 
 const SusComp = (Component: any, key?: string) => (
     <Suspense fallback="load">
@@ -15,6 +17,8 @@ const SusComp = (Component: any, key?: string) => (
 const routes: RouteType[] = [
     { path: "/", name: "首页", element: <Home /> },
     { path: "/login", name: "登录", element: SusComp(Login) },
+    { path: "/sign_in", name: "签到表", element: SusComp(SignIn) },
+    { path: "/sign_in_details/:id", name: "签到表详情", element: SusComp(SignInDetails) },
     { path: "*", element: SusComp(NotFound) }
 ];
 
