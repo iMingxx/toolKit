@@ -4,6 +4,9 @@ import vitePluginImp from "vite-plugin-imp";
 
 const path = require("path");
 export default defineConfig({
+    server: {
+        host: "0.0.0.0" // 使服务器可通过局域网访问
+    },
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "src"),

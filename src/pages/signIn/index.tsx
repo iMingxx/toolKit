@@ -80,7 +80,7 @@ export default function SignIn() {
                 {signInList.map(item => (
                     <List.Item
                         key={item.id}
-                        prefix={<TextOutline />}
+                        prefix={<TextOutline style={{ fontSize: "1rem" }} />}
                         onClick={() => onClick(item)}
                         description={item.time}
                     >
